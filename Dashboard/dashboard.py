@@ -120,7 +120,7 @@ with tab3:
     st.header("🔮 Prediksi Drop Out Mahasiswa - Logistic Regression")
 
     try:
-        logreg_model = load_model("logistic_regression_model.pkl")
+        logreg_model = load_model("Dashboard/logistic_regression_model.pkl")
     except Exception as e:
         st.error(f"Gagal memuat model Logistic Regression: {e}")
         st.stop()
