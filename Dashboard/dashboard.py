@@ -126,7 +126,7 @@ with tab3:
         st.stop()
 
     try:
-        feature_columns = joblib.load("features.pkl")
+        feature_columns = joblib.load("Dashboard/features.pkl")
     except Exception as e:
         st.error(f"Error loading feature columns: {e}")
         st.stop()
