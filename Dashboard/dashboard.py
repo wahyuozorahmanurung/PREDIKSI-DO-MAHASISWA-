@@ -15,7 +15,7 @@ plt.rcParams["figure.figsize"] = (10, 5)
 @st.cache_data
 def load_original_data():
     try:
-        df_original = pd.read_csv("data_mahasiswa_risk.csv")
+        df_original = pd.read_csv("Dashboard/data_mahasiswa_risk.csv")
         return df_original
     except Exception as e:
         st.error(f"Error loading original data: {e}")
@@ -25,7 +25,7 @@ def load_original_data():
 @st.cache_data
 def load_cluster_data():
     try:
-        df_cluster = pd.read_csv("cluster.csv")
+        df_cluster = pd.read_csv("Dashboard/cluster.csv")
         return df_cluster
     except Exception as e:
         st.error(f"Error loading cluster data: {e}")
